@@ -55,6 +55,6 @@ public class FirstController {
 
         model.addAttribute("result", result);
 
-        return "";
+        return "first/calculator";
     }
 }
