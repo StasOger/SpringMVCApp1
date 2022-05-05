@@ -1,11 +1,9 @@
 package ru.alishev.springcourse.models;
 
-
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-
 
 /**
  * @author Neil Alishev
@@ -21,7 +19,7 @@ public class Person {
     private int age;
 
     @NotEmpty(message = "Email should not be empty")
-    //@Email(message = "Email should be valid")
+    @Email(message = "Email should be valid")
     private String email;
 
     public Person() {
